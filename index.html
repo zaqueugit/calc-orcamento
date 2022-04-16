@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!--=============== METADADOS ===============-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--=============== TÍTULO ===============-->
+	<title>Calculadora de orçamento</title>
+
+	<!--=============== STYLE SHEET ===============-->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<section id="orc">
+    <div class="container">
+	<h1>Cálculadora de Orçamento</h1>
+
+	<table>
+		<tbody>
+			<tr>
+				<td>Valor inicial</td>
+				<td><input type="number" id="valorInicial"></td>
+			</tr>
+			
+			<tr>
+				<td>IPI</td>
+				<td><input type="number" id="ipi" value="3.75"/></td>
+			</tr>
+
+			<tr>
+				<td>Substituição Tributária</td>
+				<td><input type="number" id="st"/></td>
+			</tr>
+
+			<tr>
+				<td>ICMS</td>
+				<td><input type="number" id="icms" step='0.01'/></td>
+			</tr>
+
+			<tr>
+				<td>Lucro*</td>
+				<td><input type="number" id="porcentagemLucro"/></td>
+			</tr>
+
+			<tr>
+				<td>Total</td>
+				<td><input type="number" id="total" class="resultado" disabled></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<textarea id="conteudo" placeholder="Digite ou cole seu texto aqui!"></textarea>
+
+<footer>
+	<div>
+		<p>© 2022 Edilando Saturnino</p>
+		</div>
+</footer>
+
+</div>
+
+    <!--=============== JS ===============-->
+	<script src="assets/js/jquery-3.5.0.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
