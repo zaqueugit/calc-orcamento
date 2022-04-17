@@ -19,7 +19,6 @@
 
 	<!--=============== STYLE SHEET ===============-->
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/new.css">
 
 </head>
 <body>
@@ -40,7 +39,7 @@
 	<label class="text" for="icms">Icms (%)</label>
 	<input class="insert-value" type="number" id="icms" step='0.01'/>
 
-	<label class="text" for="porcentagemlucro">Lucro (multiplicador)*</label>
+	<label class="text" onclick="copiar()" for="porcentagemlucro">Lucro (multiplicador)*</label>
 	<input class="insert-value" type="number" id="porcentagemlucro" placeholder="Ex.: 1,55"/>
 
 	<input type="number" id="total" class="resultado" disabled>
