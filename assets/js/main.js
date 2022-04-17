@@ -11,6 +11,3 @@ var porcentagemLucro = Number($("#porcentagemlucro").val());
 
 var total = (valorInicial + (ipi / 100) + (st / 100) + (icms / 100)) * porcentagemLucro;
 $('#total').val(parseFloat(total.toFixed(2)));
-
-});
-});
