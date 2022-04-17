@@ -5,66 +5,49 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Calculadora de orçamento">
+	<meta name="keywords" content="calaculadora, orçamento, ipi, icms, st, valor inicial, calculadora de orçamento, calcular orçamento, sites, web, website">
+    <meta name="author" content="Edilando Saturnino"/>
+	<meta name="copyright" content="Edilando Saturnino 2022"/>
+	<meta http-equiv="content-language" content="pt-br"/>
+    <meta property="og:description"r content="Calculadora de orçamento"/>
+    <meta name="theme-color" content="#6610F2" />
+    <meta property="og:title" content="Calculadora de orçamento"/>
 
 	<!--=============== TÍTULO ===============-->
 	<title>Calculadora de orçamento</title>
 
 	<!--=============== STYLE SHEET ===============-->
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/new.css">
 
 </head>
 <body>
 
-<section id="orc">
-    <div class="container">
-	<h1>Calculadora de Orçamento</h1>
+<main>
+	<h2>Calculadora de Orçamento</h2>
+	<p class="text">Valor inicial (R$)</p>
+	<input class="insert-value" type="number" id="valorInicial">
 
-	<table>
-		<tbody>
-			<tr>
-				<td>Valor inicial</td>
-				<td><input type="number" id="valorInicial"></td>
-			</tr>
-			
-			<tr>
-				<td>IPI</td>
-				<td><input type="number" id="ipi" value="3.75"/></td>
-			</tr>
+	<p class="text">Ipi (%)</p>
+	<input class="insert-value" type="number" id="ipi" value="3.75"/>
 
-			<tr>
-				<td>Substituição Tributária</td>
-				<td><input type="number" id="st"/></td>
-			</tr>
+	<p class="text">St (%)</p>
+	<input class="insert-value" type="number" id="st"/>
 
-			<tr>
-				<td>ICMS</td>
-				<td><input type="number" id="icms" step='0.01'/></td>
-			</tr>
+	<p class="text">Icms (%)</p>
+	<input class="insert-value" type="number" id="icms" step='0.01'/>
 
-			<tr>
-				<td>Lucro*</td>
-				<td><input type="number" id="porcentagemLucro"/></td>
-			</tr>
+	<p class="text">Lucro (multiplicador)*</p>
+	<input class="insert-value" type="number" id="porcentagemLucro"/>
 
-			<tr>
-				<td>Total</td>
-				<td><input type="number" id="total" class="resultado" disabled></td>
-			</tr>
-		</tbody>
-	</table>
-
-	<textarea id="conteudo" placeholder="Digite ou cole seu texto aqui!"></textarea>
-
-<footer>
-	<div>
-		<p>© 2022 Edilando Saturnino</p>
-		</div>
-</footer>
-
-</div>
+	<p></p>
+	<input type="number" id="total" class="resultado" disabled>
+</main>
 
     <!--=============== JS ===============-->
 	<script src="assets/js/jquery-3.5.0.min.js"></script>
 	<script src="assets/js/main.js"></script>
+
 </body>
 </html>

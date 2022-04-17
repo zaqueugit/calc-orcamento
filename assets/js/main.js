@@ -9,8 +9,8 @@ var st = Number($("#st").val());
 var icms = Number($("#icms").val());
 var porcentagemLucro = Number($("#porcentagemLucro").val());
 
-var total= (valorInicial + (ipi / 100) + (st / 100) + (icms / 100)) * porcentagemLucro;
-$('#total').val(total);
+var total = (valorInicial + (ipi / 100) + (st / 100) + (icms / 100)) * porcentagemLucro;
+$('#total').val(parseFloat(total.toFixed(2)));
 
 });
 });
