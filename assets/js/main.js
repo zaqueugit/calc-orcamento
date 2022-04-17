@@ -1,16 +1,21 @@
 $(function() {
 
-$("#valorinicial, #ipi, #st, #icms, #porcentagemlucro").keyup(function(){
+$("#valorinicial, #ipi, #st, #icms, #lucro").keyup(function(){
 
 var total = 0;    	
 var valorInicial = Number($("#valorinicial").val());
 var ipi = Number($("#ipi").val());
 var st = Number($("#st").val());
 var icms = Number($("#icms").val());
-var porcentagemLucro = Number($("#porcentagemlucro").val());
+var lucro = Number($("#lucro").val());
 
-var total = (valorInicial + (ipi / 100) + (st / 100) + (icms / 100)) * porcentagemLucro;
-$('#total').val(parseFloat(total.toFixed(2)));
+var ipiSoma = (valorInicial * (st / 100))
+var stSoma = (valorInicial * (ipi / 100))
+var icmsSoma = (valorInicial * (icms / 100))
+
+var total = (valorInicial + ipiSoma + stSoma + icmsSoma) * lucro
+
+$('#total').val(parseFloat((total.toFixed(2))));
 
 });
 });
