@@ -10,11 +10,11 @@ var st = Number($("#st").val());
 var icms = Number($("#icms").val());
 var lucro = Number($("#lucro").val());
 
-var ipiSoma = (valorInicial * (ipi / 100))
-var stSoma = (valorInicial * (st / 100))
-var icmsSoma = (valorInicial * (icms / 100))
+var ipiSoma = (valorInicial * (ipi / 100)) + valorInicial
+var stSoma = (ipiSoma * (st / 100)) + ipiSoma
+var icmsSoma = (stSoma * (icms / 100)) + stSoma
 
-var total = (valorInicial + ipiSoma + stSoma + icmsSoma) * lucro
+var total = icmsSoma * lucro
 
 $('#total').val(parseFloat((total.toFixed(2))));
 
