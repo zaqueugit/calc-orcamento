@@ -1,3 +1,5 @@
+@import url(reset.css);
+
 body{
     display: relative;
     width: 940px;
@@ -10,18 +12,27 @@ body{
 }
 
 main{
-    width: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.container {
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: #fff;
+    margin-right: -50%;
     transform: translate(-50%, -50%);
     padding: 20px;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 1px 1px 20px #5552ee;
 }
 
-h2{
+h1{
+    padding-bottom: 2%;
     font-size: 30px;
     font-weight: 600;
 }
@@ -45,7 +56,8 @@ h2{
     width: 200px;
 }
 
-#porcentagemlucro::placeholder {
+#lucro::placeholder {
+    transition: 400ms;
     opacity: 0.5;
 }
 
@@ -66,8 +78,10 @@ h2{
     padding-left: 22px;
     text-align:center;
     font-size: 17px;
+    transition: 400ms;
 }
 
 .resultado:hover {
     box-shadow: 1px 1px 10px #341f97;
 }
+
